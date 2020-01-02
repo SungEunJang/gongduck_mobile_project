@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="3"
+        android:text="재난시 대피 요령"
+        android:textSize="32dp"
+        android:fontFamily="@font/hangeul_nuri_bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/e_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/e_hot" />
+
+        <ImageView
+            android:id="@+id/e_cold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e_hot"
+            app:srcCompat="@drawable/e_cold" />
+
+        <ImageView
+            android:id="@+id/e_fire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e_cold"
+            app:srcCompat="@drawable/e_fire" />
+
+        <ImageView
+            android:id="@+id/e_earthq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e_fire"
+            app:srcCompat="@drawable/e_earthq" />
+    </RelativeLayout>
+
+</LinearLayout>
